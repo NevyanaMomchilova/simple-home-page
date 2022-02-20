@@ -304,6 +304,11 @@ main {
 		width: 100%;
 		max-width: 42.25rem;
 }
+@media screen and (max-width: 48rem) {
+		.hero-left {
+				width: 0;
+		}
+}
 .hero-left-background {
 		-o-object-fit: cover;
 		   object-fit: cover;
@@ -330,6 +335,11 @@ main {
 .nav-main-menu-item {
 		padding-left: 2.5rem;
 }
+@media screen and (max-width: 36rem) {
+		.nav-main-menu-item {
+				padding-left: 0.9375rem;
+		}
+}
 
 .nav-main-menu-link {
 		display: inline-block;
@@ -338,13 +348,18 @@ main {
 		color: #060606;
 		transition: transform 250ms ease, color 250ms ease;
 }
+@media screen and (max-width: 48rem) {
+		.nav-main-menu-link {
+				color: #ffffff;
+		}
+}
 .nav-main-menu-link:hover {
 		color: rgba(0, 0, 0, 0.6);
 		transform: scale(1.05);
 }
 @media screen and (max-width: 48rem) {
-		.nav-main-menu-link {
-				color: #ffffff;
+		.nav-main-menu-link:hover {
+				color: rgba(255, 255, 255, 0.8);
 		}
 }
 
@@ -352,6 +367,11 @@ main {
 		position: relative;
 		width: 100%;
 		padding: 2.5rem 3.75rem;
+}
+@media screen and (max-width: 36rem) {
+		.hero-right {
+				padding: 1.25rem 1.25rem;
+		}
 }
 .hero-right .title {
 		width: 100%;
@@ -397,24 +417,56 @@ main {
 		margin-right: 0.9375rem;
 		transition: transform 400ms ease, background-color 400ms ease, border-color 400ms ease;
 }
+@media screen and (max-width: 48rem) {
+		.hero-right .btn {
+				border-color: #ffffff;
+				max-width: 9.6875rem;
+				height: 3.75rem;
+		}
+}
 .hero-right .btn-primary {
 		color: #ffffff;
 		background-color: #060606;
 }
+@media screen and (max-width: 48rem) {
+		.hero-right .btn-primary {
+				color: #000000;
+				background-color: #ffffff;
+		}
+}
 .hero-right .btn-primary:hover {
 		background-color: rgba(0, 0, 0, 0.6);
 		transform: scale(1.05);
+}
+@media screen and (max-width: 48rem) {
+		.hero-right .btn-primary:hover {
+				color: #ffffff;
+				background-color: rgba(255, 255, 255, 0.2);
+		}
 }
 .hero-right .btn-secondary {
 		color: #000000;
 		background-color: #ffffff;
 		border-color: #000000;
 }
+@media screen and (max-width: 48rem) {
+		.hero-right .btn-secondary {
+				color: #ffffff;
+				border-color: #ffffff;
+				background-color: transparent;
+		}
+}
 .hero-right .btn-secondary:hover {
 		color: #ffffff;
 		background-color: rgba(0, 0, 0, 0.6);
 		border-color: rgba(0, 0, 0, 0.6);
 		transform: scale(1.05);
+}
+@media screen and (max-width: 48rem) {
+		.hero-right .btn-secondary:hover {
+				border-color: #ffffff;
+				background-color: rgba(255, 255, 255, 0.2);
+		}
 }
 .hero-right .square-element {
 		position: absolute;

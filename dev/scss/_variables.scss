@@ -6,13 +6,19 @@ $color-black-shade:  #060606;
 $color-black-opacity6: rgba(0, 0, 0, 0.6);
 $color-white: #ffffff;
 
-// Font
+// Font Family
 $font-family-primary: 'Poppins', sans-serif;
 
-$font-size-big: 50px;
-$font-size-medium: 20px;
-$font-size-small: 16px;
+// Font Size
+$font-size-big: clamp(2.5rem, 2.3355rem + 0.8772vw, 3.125rem);
+$font-size-medium: clamp(1rem, 0.9342rem + 0.3509vw, 1.25rem);
+$font-size-small: pxToRem(16px);
 
+// Font Line Height
 $line-height-medium: pxToPercentageLineHeight(30px);
 $line-height-small-plus: pxToPercentageLineHeight(25.6px);
 $line-height-small: pxToPercentageLineHeight(24px);
+
+// Breakpoints
+$breakpoint-lg: pxToRem(1000px);
+$breakpoint-md: pxToRem(768px);

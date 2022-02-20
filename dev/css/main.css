@@ -44,6 +44,8 @@ a {
 /* Make images easier to work with */
 img,
 picture {
+		width: 100%;
+		height: auto;
 		display: block;
 }
 
@@ -284,12 +286,38 @@ html {
 }
 
 main {
+		position: relative;
 		display: flex;
 		width: 100%;
 		max-width: 90rem;
 		min-height: 100vh;
 		height: 64rem;
 		margin: 0 auto;
+}
+@media screen and (max-width: 62.5rem) {
+		main {
+				height: 50rem;
+		}
+}
+
+.hero-left {
+		width: 100%;
+		max-width: 42.25rem;
+}
+.hero-left-background {
+		-o-object-fit: cover;
+		   object-fit: cover;
+		height: 100%;
+}
+@media screen and (max-width: 48rem) {
+		.hero-left-background {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: -1;
+		}
 }
 
 .nav-main-menu {
@@ -305,7 +333,7 @@ main {
 
 .nav-main-menu-link {
 		display: inline-block;
-		font-size: 20px;
+		font-size: clamp(1rem, 0.9342rem + 0.3509vw, 1.25rem);
 		line-height: 187.5%;
 		color: #060606;
 		transition: transform 250ms ease, color 250ms ease;
@@ -314,6 +342,11 @@ main {
 		color: rgba(0, 0, 0, 0.6);
 		transform: scale(1.05);
 }
+@media screen and (max-width: 48rem) {
+		.nav-main-menu-link {
+				color: #ffffff;
+		}
+}
 
 .hero-right {
 		position: relative;
@@ -321,22 +354,43 @@ main {
 		padding: 2.5rem 3.75rem;
 }
 .hero-right .title {
-		width: 31rem;
-		font-size: 50px;
+		width: 100%;
+		max-width: 31rem;
+		font-size: clamp(2.5rem, 2.3355rem + 0.8772vw, 3.125rem);
 		line-height: 150%;
 		color: #000000;
 		margin-top: 14.0625rem;
 		margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 62.5rem) {
+		.hero-right .title {
+				margin-top: 7.8125rem;
+		}
+}
+@media screen and (max-width: 48rem) {
+		.hero-right .title {
+				color: #ffffff;
+		}
+}
 .hero-right .text {
-		width: 35rem;
-		font-size: 20px;
+		width: 100%;
+		max-width: 35rem;
+		font-size: clamp(1rem, 0.9342rem + 0.3509vw, 1.25rem);
 		line-height: 160%;
 		color: rgba(0, 0, 0, 0.6);
 		margin-bottom: 4.125rem;
 }
+@media screen and (max-width: 48rem) {
+		.hero-right .text {
+				color: #ffffff;
+		}
+}
+.hero-right .buttons-container {
+		display: flex;
+}
 .hero-right .btn {
-		width: 11.5625rem;
+		width: 100%;
+		max-width: 11.5625rem;
 		height: 4.25rem;
 		border: 0.125rem solid transparent;
 		border-radius: 0.625rem;
@@ -368,4 +422,17 @@ main {
 		right: 0;
 		width: 10.75rem;
 		height: 10.75rem;
+}
+@media screen and (max-width: 48rem) {
+		.hero-right .square-element-original {
+				display: none;
+		}
+}
+.hero-right .square-element-white {
+		display: none;
+}
+@media screen and (max-width: 48rem) {
+		.hero-right .square-element-white {
+				display: block;
+		}
 }/*# sourceMappingURL=main.css.map */

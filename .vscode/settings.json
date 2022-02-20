@@ -1,0 +1,21 @@
+{
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "/dev/css/",
+			"indentType": "tab"
+		},
+		{
+			"extensionName": ".min.css",
+			"format": "compressed",
+			"savePath": "/prod/css/"
+		}
+	],
+	"liveSassCompile.settings.excludeList": [
+		"**/node_modules/**",
+		".vscode/**"
+	],
+	"liveSassCompile.settings.generateMap": true,
+	"liveSassCompile.settings.autoprefix": ["defaults"]
+}

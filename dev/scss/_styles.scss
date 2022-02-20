@@ -1,0 +1,112 @@
+@use "variables" as *;
+@use "functions" as *;
+
+html {
+	font-family: $font-family-primary;
+	font-size: 100%;
+	line-height: $line-height-small;
+	font-weight: 500;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    max-width: pxToRem(1440px);
+    min-height: 100vh;
+    height: pxToRem(1024px);
+    margin: 0 auto;
+}
+
+.nav-main-menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-main-menu-item {
+    padding-left: pxToRem(40px);
+}
+
+.nav-main-menu-link {
+    display: inline-block;
+    font-size: $font-size-medium;
+    line-height: $line-height-medium;
+    color: $color-black-shade;
+    transition: transform 250ms ease,
+                color 250ms ease;
+
+    &:hover {
+        color: $color-black-opacity6;
+        transform: scale(1.05);
+    }
+}
+
+.hero-right {
+    position: relative;
+    width: 100%;
+    padding: pxToRem(40px) pxToRem(60px);
+
+    .title {
+        width: pxToRem(496px);
+        font-size: $font-size-big;
+        line-height: $line-height-small;
+        color: $color-black;
+        margin-top: pxToRem(225px);
+        margin-bottom: pxToRem(24px);
+    }
+
+    .text {
+        width: pxToRem(560px);
+        font-size: $font-size-medium;
+        line-height: $line-height-small-plus;
+        color: $color-black-opacity6;
+        margin-bottom: pxToRem(66px);
+    }
+
+    .btn {
+        width: pxToRem(185px);
+        height: pxToRem(68px);
+        border: pxToRem(2px) solid transparent;
+        border-radius: pxToRem(10px);
+        margin-right: pxToRem(15px);
+        transition: transform 400ms ease,
+                    background-color 400ms ease,
+                    border-color 400ms ease;
+    }
+
+    .btn-primary {
+        color: $color-white;
+        background-color: $color-black-shade;
+
+        &:hover {
+            background-color: $color-black-opacity6;
+            transform: scale(1.05);
+        }
+    }
+
+    .btn-secondary {
+        color: $color-black;
+        background-color: $color-white;
+        border-color: $color-black;
+        
+        &:hover {
+            color: $color-white;
+            background-color: $color-black-opacity6;
+            border-color: $color-black-opacity6;
+            transform: scale(1.05);
+        }
+    }
+
+    .square-element {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: pxToRem(172px);
+        height: pxToRem(172px);
+    } 
+}
+
+
+
+
